@@ -15,6 +15,7 @@ body header nav a{
 #my-image{
     box-shadow: 0px 0px 2px 1px black;
 }
+/* navigation bar */
 body nav ul{
     list-style-type:none;
 }
@@ -26,9 +27,12 @@ body nav ul li a{
 body nav ul li a:hover{
     background-color: blueviolet;
 }
+/**************************/
+/* hobbies list */
 main ul{
     list-style-type: square;
 }
 main ul li:nth-of-type(odd){
     background-color: green;
 }
+/**************************/
