@@ -93,3 +93,9 @@ article ul li{
 }
 
 /*----------------*/
+/*----contact-----*/
+label, input{
+    width: 100%;
+    display: block;
+}
+/*----------------*/
