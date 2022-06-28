@@ -1,6 +1,8 @@
 
 html{
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
 }
 *,
 *:before,
@@ -29,9 +31,8 @@ header img {
 }
 header h1 {
     display: block;
-    font-family: 'Times New Roman', Times, serif;
     position: absolute;
-    font-size: 50pt;
+    font-size: 4rem;
     top: 70%;
     width: 100%;
     height: 20%;
@@ -40,62 +41,98 @@ header h1 {
 }
 /*----------------*/
 /*---Navigation---*/
-nav{
-    background-color: aliceblue;
-}
 nav, ul {
 width: 100%;
 }
 nav ul li {
     float: left;
     width: 33%;
-    height: 30px;
-    background-color: blue;
-    line-height: 30px;
-    text-align: center;
-    
+    height: 2rem;
+    background-color: #D4E9E7;
 }
 nav ul li:nth-child(2){
-border-left: 2px solid red;
-border-right:2px solid red;
+border-left: 2px solid black;
+border-right:2px solid black;
 }
 nav ul li a{
     display: block;
-    font-size: 20px;
     width: 100%;
     color: black;
+    font-size: 2rem;
     text-decoration: none;
+    text-align: center;
 }
 /*----------------*/
 /*-----Story------*/
 article{
-    background-color: aliceblue;
+    background-color: #D4E9E7;
+    padding: 10px;
 }
 article h2 {
-    font-size: 35pt;
+    margin: 30px 0 10px 0;
+    font-size: 3rem;
+    font-weight: bold;
 }
 article h3{
-    font-size: 25pt;
+    margin: 25px 0 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 article img{
     float: left;
+    margin-right : 10px;
     max-width: 300px;
 }
 article p {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 article ul li{
     display: list-item;
     list-style-position:outside;
-    list-style-type: circle;
-    margin-left: 2em;;
-    font-size: 20px;
+    list-style-type: disc;
+    margin-left: 2rem;;
+    font-size: 1.5rem;
 }
-
 /*----------------*/
 /*----contact-----*/
-label, input{
-    width: 100%;
+.contact{
+    background-color: #D4E9E7;
+    padding: 10px;
+}
+.contact h3{
+    margin: 20px 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contact form {
+    border: 2px solid black;
+    padding: 10px;
+}
+.text_input label, .text_input input, .text_input textarea{
     display: block;
+    width: 100%;
+}
+.text_input label{
+    margin-top: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.text_input input{
+    font-size: 1.25rem;
+}
+.text_input textarea{
+    font-size: 1.25rem;
+}
+.contact .submit_button{
+    margin-top: 10px;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+/*----------------*/
+/*-----footer-----*/
+footer p{
+    float: right;
+    font-size: 0.9rem;
+    margin-right: 20px;
 }
 /*----------------*/

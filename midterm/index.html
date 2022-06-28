@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- use a wrapper to set as width and center the content-->
-    <div class="wrapper">
+    <div id="home" class="wrapper">
         <div class="container">
             <header>
                 <img class="header_img" src="./images/lone-starfish-wide.jpg" alt="lone starfish">
@@ -28,7 +28,7 @@
             </nav>
         </div>
         <!-- section: story-->
-        <div class="container">
+        <div id="story" class="container">
             <article class="story">
                 <h2>Life of a Starfish</h2>
                 <img src="./images/lone-starfish.jpg" alt="lone starfish">
@@ -44,18 +44,33 @@
                 </ul>
             </article>
         </div>
-        <div class="contact container clearfix">
+        <!-- section: contact-->
+        <div id="contact" class="contact clearfix">
             <h3>Contact to learn more</h3>
             <form action="submit" method="post">
-                <label for="fullname">Your Name</label>
-                <input id="fullname" type="text" placeholder="John Smith">
-                <label for="emailadd">Your Email</label>
-                <input id="emailadd" type="email" placeholder="J.Smith@mail.com">
-                <label for="message">Your Message</label>
-                <input id="message" type="text" rows="8" placeholder="Type your message here">
-            </form>
-            
+                <div class="text_input">
+                    <label for="fullname">Your Name</label>
+                    <input id="fullname" type="text" placeholder="John Smith">
+                    <label for="emailadd">Your Email</label>
+                    <input id="emailadd" type="email" placeholder="J.Smith@mail.com">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" type="text" rows="10" placeholder="Type your message here"></textarea>
+                </div>
+                <h3>Would you like to visit the starfish?</h3>
+                <div class="clearfix">
+                    <div class="radio_inputs">
+                        <label for="yes">Yes</label>
+                        <input id="yes" name="visit" type="radio" value="yes">
+                        <label for="no">No</label>
+                        <input id="no" name="visit" type="radio" value="no">
+                        <label for="maybe">Maybe</label>
+                        <input id="maybe" name="visit" type="radio" value="maybe">
+                    </div>
+                </div>
+                <button id="submit_button" class="submit_button" onclick="alert('Thanks for your message')">Submit</button>
+            </form>       
         </div>
+        <footer><p>©Lone fish</p></footer>
     </div>
     <!-- header fore image and ... -->
 </body>
