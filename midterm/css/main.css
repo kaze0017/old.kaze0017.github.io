@@ -23,10 +23,10 @@ body {
 /*----header-----*/
 header{
     position: relative;
-    min-height: 150px;
 }
 header img {
     display: block;
+    min-width: 150px;
     margin: 0 auto;
 }
 header h1 {
