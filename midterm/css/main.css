@@ -66,7 +66,7 @@ nav ul li a{
 /*-----Story------*/
 article{
     background-color: #D4E9E7;
-    padding: 10px;
+    padding: 20px;
 }
 article h2 {
     margin: 30px 0 10px 0;
@@ -85,6 +85,8 @@ article img{
 }
 article p {
     font-size: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 article ul li{
     display: list-item;
