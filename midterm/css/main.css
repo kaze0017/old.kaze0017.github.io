@@ -1,4 +1,4 @@
-
+/* sets box-sizing*/
 html{
     box-sizing: border-box;
     font-size: 16px;
@@ -9,18 +9,23 @@ html{
 *:after{
     box-sizing: inherit;
 }
+/*------------*/
 body {
     background-color: #aad4cf;
 }
+/*wrapper: sets width and centers the content*/
 .wrapper {
     max-width: 1024px;
     margin:0 auto;
 }
+/*--------------------*/
+/*--reusable classes--*/
 .clearfix:after {
     content: "";
     clear: both;
 } 
-/*----header-----*/
+/*-------------------------------*/
+/*section 1: header image & title*/
 header{
     position: relative;
 }
@@ -39,8 +44,8 @@ header h1 {
     background-color: rgba(255,255,255, 0.5);
     text-align: center;
 }
-/*----------------*/
-/*---Navigation---*/
+/*---------------------------------*/
+/*---section 2: navigation menue---*/
 nav, ul {
 width: 100%;
 }
@@ -62,8 +67,8 @@ nav ul li a{
     text-decoration: none;
     text-align: center;
 }
-/*----------------*/
-/*-----Story------*/
+/*-----------------------*/
+/*----section 3: story---*/
 article{
     background-color: #D4E9E7;
     padding: 20px;
@@ -95,8 +100,8 @@ article ul li{
     margin-left: 2rem;;
     font-size: 1.5rem;
 }
-/*----------------*/
-/*----contact-----*/
+/*-----------------------*/
+/*-- section 4: contact--*/
 .contact{
     background-color: #D4E9E7;
     padding: 10px;
@@ -130,11 +135,11 @@ article ul li{
     height: 2rem;
     font-size: 1.5rem;
 }
-/*----------------*/
-/*-----footer-----*/
+/*---------------------*/
+/*--section 5: footer--*/
 footer p{
     float: right;
     font-size: 0.9rem;
     margin-right: 20px;
 }
-/*----------------*/
+/*--------------------*/
