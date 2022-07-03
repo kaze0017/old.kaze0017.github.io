@@ -9,16 +9,17 @@
     <title>Web Development I - Midterm</title>
 </head>
 <body>
-    <!-- use a wrapper to set as width and center the content-->
+    <!--wrapper: sets width and centers the content-->
     <div id="home" class="wrapper">
+        <!-- section 1: header image & title-->
         <div class="container">
             <header>
                 <img class="header_img" src="./images/lone-starfish-wide.jpg" alt="lone starfish">
                 <H1>Lone Starfish</H1>
             </header>
         </div>
-        <!-- section navigation menue-->
-        <div class="container fixclear">
+        <!-- section 2: navigation menue-->
+        <div class="container clearfix">
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -27,12 +28,12 @@
                 </ul>
             </nav>
         </div>
-        <!-- section: story-->
+        <!-- section 3: story-->
         <div id="story" class="container">
             <article class="story">
                 <h2>Life of a Starfish</h2>
-                <img src="./images/lone-starfish.jpg" alt="lone starfish">
-                <div class="clearfix">
+                <div class="float_left clearfix">
+                    <img src="./images/lone-starfish.jpg" alt="lone starfish">
                     <p >
                         Starfish or sea stars are star-shaped echinoderms belonging to the class Asteroidea (/ˌæstəˈrɔɪdiə/). Common usage frequently finds these names being also applied to ophiuroids, which are correctly referred to as brittle stars or basket stars. Starfish are also known as asteroids due to being in the class Asteroidea. About 1,900 species of starfish occur on the seabed in all the world's oceans, from warm, tropical zones to frigid, polar regions. They are found from the intertidal zone down to abyssal depths, at 6,000 m (20,000 ft) below the surface.</p><br>
                     <P>
@@ -49,8 +50,8 @@
                 </ul>
             </article>
         </div>
-        <!-- section: contact-->
-        <div id="contact" class="contact clearfix">
+        <!-- section 4: contact-->
+        <div id="contact" class="contact container">
             <h3>Contact to learn more</h3>
             <form action="submit" method="post">
                 <div class="text_input">
@@ -62,21 +63,19 @@
                     <textarea id="message" rows="10" placeholder="Type your message here"></textarea>
                 </div>
                 <h3>Would you like to visit the starfish?</h3>
-                <div class="clearfix">
-                    <div class="radio_inputs">
+                <div class="radio_inputs float_left clearfix">
                         <label for="yes">Yes</label>
                         <input id="yes" name="visit" type="radio" value="yes">
                         <label for="no">No</label>
                         <input id="no" name="visit" type="radio" value="no">
                         <label for="maybe">Maybe</label>
                         <input id="maybe" name="visit" type="radio" value="maybe">
-                    </div>
                 </div>
                 <button id="submit_button" class="submit_button" type="reset"  onclick="alert('Thanks for your message')">Submit</button>
             </form>       
         </div>
+        <!-- section 5: footer-->
         <footer><p>©Lone fish</p></footer>
     </div>
-    <!-- header fore image and ... -->
 </body>
 </html>
