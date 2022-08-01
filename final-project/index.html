@@ -4,9 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTM6130 Final - Kazemi</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/0ce3b99428.js" crossorigin="anonymous"></script>
+    <title>Final</title>
 </head>
 <body>
+    <!--section 1: Header - logo + navigation + search bar + wellcom-->
+    <header id="home">
+        <!-- Navigation: contains logo and nav bar sorted by flex in css on the top -->
+        <nav>
+            <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!--creats search bar with magnifier button - -->
+            <form>
+                <input type="search" id="gsearch" name="gsearch" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+        <!--Wellcom: parent div for Full width background in css + Child div for header + text + button to summery page-->
+        <div class="welcome">
+            <div>
+                <h1>Welcom to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error, aperiam porro quas minus qui aliquam a cumque id quos suscipit sunt aspernatur eos, molestiae neque magnam officiis nulla? Magni?</p>
+                <button type="button">Connect with us! <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </div>
+    </header>
+    <!------------------------------------------------------------>
+    <main>
+    <!----------------------section 2: about us-------------------->
+        <!--section with full width yellow background in css - child div contains an image + header + 2 paragraph-->
+        <section id="aboutus">
+            <!--class wrapper (reusable): a container to set margins and centering the content-->
+            <div class="wrapper">
+                <img src="./images/about-us.jpg" alt="recreation room">
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi recusandae assumenda quasi eligendi quia iusto consequatur, at ipsam. Illum quae reiciendis numquam molestiae delectus, veniam dolor praesentium at beatae consequuntur?</p>
+                    <p>Molestias, ab officiis similique aut, facilis laudantium voluptatibus ratione consectetur eligendi eum reiciendis voluptatum corporis totam explicabo nemo ullam pariatur natus vitae maiores. Tenetur nobis explicabo, accusantium in rem eum!</p>
+
+                </div>
+            </div>
+        </section>
+    <!------------------------------------------------------------>
+    <!----------------------section 3: services-------------------->
+        <!-- section 3: no background. services are wrapped in wrapper container-->
+        <section id="services">
+            <!--wraper sets margings for services: header + "digitrans" + "marketing" + "video production" + "web Development" + "print"-->
+            <div class="wrapper">
+                <h2>Our Services</h2>
+                <!--digital transformation-->
+                <div class="service">
+                    <img src="./images/digital.jpg" alt="digital services">
+                    <div class="container">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <!--marketing-->
+                <div class="service">
+                    <img src="./images/marketing.jpg" alt="marketing">
+                    <div class="container">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <!--Video Production-->
+                <div class="service">
+                    <img src="./images/video.jpg" alt="video production">
+                    <div class="container">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <!--Web Development-->
+                <div class="service">
+                    <img src="./images/web.jpg" alt="web development">
+                    <div class="container">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <!--Print-->
+                <div class="service">
+                    <img src="./images/print.jpg" alt="print">
+                    <div class="container">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Print Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- our vision: parent div with full width background image from css - child div wrapes header + a paragraph con button-->
+            <div class="vision">
+                <div class="wrapper">
+                    <div class="container">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                        <button type="button">Learn More <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!------------------------------------------------------------>
+    <!----------------------section 4: Team ---------------------->
+    <!--Team section: no background - wraper contains two team member in seperate divs-->
+    <section id="team">
+        <div class="wrapper">
+            <h2>Our Team</h2>
+            <div class="member">
+                <img src="./images/john.jpg" alt="john doe">
+                <div class="container">
+                    <h3>John Doe</h3>
+                    <!--botton borderbox-->
+                    <h4>CEO and Co-owner</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="./images/bob.jpg" alt="bob rite">
+                <div class="container">
+                    <h3>Bob Rite</h3>
+                    <!--botton borderbox-->
+                    <h4>CFO and Co-owner</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------>
+    <!----------------------section 5: contact-------------------->
+    <!--content section: includes message form + time table + map location - all  wrapped -->
+    <section id="contact">
+        <div class="wrapper">
+            <!--message form -->
+            <form>
+                <h2>Contact Us</h2>
+                <h3>Send us a message</h3>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <!--time table-->
+            <div>
+                <h3>Hours of operation</h3>
+                <table>
+                    <tr>
+                        <td>Days</td>
+                        <td>Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday-Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+            <!--map lication from google map-->
+            <div>
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360082.5453852811!2d-76.23158777232409!3d45.16391586906526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sfr!4v1659042757255!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------>
+    <!----------------------section 5: footer -------------------->
+    <!--section footer: full width backgroun from css-->
+    <footer>
+        <p>© Copyright three star media, 2020</p>
+        <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </footer>
+    <!------------------------------------------------------------>
+    </main>
     
 </body>
 </html>
