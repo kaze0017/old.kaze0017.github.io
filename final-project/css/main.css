@@ -26,6 +26,9 @@ button{
 }
 
 /******* section 1:Header - logo, navigation and search bar ******/
+header .container{
+    background-color: #222222;
+}
 .logo{
     background-color: #C78B07;
 }
