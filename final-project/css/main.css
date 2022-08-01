@@ -1,0 +1,169 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0px 10px;
+}
+.container{
+    padding: 10px;
+}
+h1 {
+    font-size:50px ;
+    font-weight: bold;
+}
+button{
+    background-color: #222222;
+    color: #fff;
+    height:40px;
+    border: 0;
+    margin-bottom: 0%;
+    padding: 0% 5%;
+    font-size: 15px;
+}
+
+/******* section 1:Header - logo, navigation and search bar ******/
+nav{
+    text-align: center;
+}
+
+nav .logo {
+    background-color: #C78B07;
+    text-align: left;
+}
+nav ul li {
+    background-color: #222222;
+}
+nav ul li:nth-child(1){
+    background-color: #C78B07;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #C78B07;
+}
+nav ul li:nth-child(1) a{
+    color: #222222;
+}
+nav > form {
+    background-color: #222222;
+    text-align: center;
+    font-size: 0px;
+}
+/* search bar same size as magnifier button */
+nav > form > input {
+    border: 0;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 17px;
+    height: 19px;
+    border: 1px solid transparent;
+
+}
+nav > form > button {
+    font-size: 15px;
+    line-height: 17px;
+    height: 19px;
+    padding: 0px 1px;
+    border: 1px solid #C78B07;
+    color: #C78B07;
+    background-color: #222222;
+
+
+}
+/* welcome page*/
+header .welcome {
+    height: 100vh;
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .welcome > div{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 75%;
+    padding: 2%;
+}
+.welcome h1{
+    padding: 10% 0% 5% 0px;
+}
+.welcome p{
+    font-size: 10px;
+}
+.welcome button{
+    background-color: #C78B07;
+    color: #222222;
+}
+/*********************************************************/
+#aboutus{
+    background-color: #FFE6AC;
+}
+#aboutus > .wrapper > img{
+    width: 100%;
+}
+#aboutus > .wrapper > .container{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/*********************************************************/
+
+.service{
+    margin-bottom: 10px;
+}
+#services > .wrapper > .service {
+    background-color: #FFE6AC;
+}
+#services > .wrapper > .service > img {
+    width: 100%;
+    size: cover;
+}
+#services > .vision{
+    background-image: url(../images/vision.jpg);
+    background-size: 100%;
+    color: #fff;
+}
+#services > .vision > .wrapper > .container> button{
+    background-color: #13263F;
+    color: #fff;
+    border: 1px solid #C78B07;
+}
+#services > .vision > .wrapper > .container{
+    padding-left: 0% ;
+    padding-right: 0%;
+}
+
+/*********************************************************/
+
+.member{
+    margin-bottom: 10px;
+}
+#team > .wrapper > .member {
+    background-color: #FFE6AC;
+}
+#team > .wrapper > .member> img {
+    width: 100%;
+    size: cover;
+}
+#team > .wrapper > .member > .container >h3{
+    border-bottom: 1.5px solid #C78B07;
+}
+/*********************************************************/
+
+#contact form label,#contact form input,#contact form textarea {
+    display: block;
+    width: 100%;
+}
+#contact form input:nth-child(9){
+    width: 20%;
+}
+/*********************************************************/
+
+footer{
+    background-color: #222222;
+}
+/*********************************************************/
