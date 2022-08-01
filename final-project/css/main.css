@@ -26,6 +26,9 @@ button{
 }
 
 /******* section 1:Header - logo, navigation and search bar ******/
+.logo{
+    background-color: #C78B07;
+}
 nav{
     text-align: center;
 }
@@ -47,13 +50,13 @@ nav ul li a {
 nav ul li:nth-child(1) a{
     color: #222222;
 }
-nav > form {
+header .search {
     background-color: #222222;
     text-align: center;
     font-size: 0px;
 }
 /* search bar same size as magnifier button */
-nav > form > input {
+.search > input {
     border: 0;
     display: inline-block;
     font-size: 15px;
@@ -62,7 +65,7 @@ nav > form > input {
     border: 1px solid transparent;
 
 }
-nav > form > button {
+.search > button {
     font-size: 15px;
     line-height: 17px;
     height: 19px;
