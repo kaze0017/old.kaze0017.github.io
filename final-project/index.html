@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <!--adds icons from fontawesome.com-->
@@ -14,7 +19,7 @@
     <!--section 1 - Header: contains logo(div), page navigation(nav-ul), search bar(form) and wellcom-->
     <header id="home">
         <!--container: wraps the logo, nav, and search bar -full width black backgrond from css-->
-        <div class="container">
+        <div class="wrapper container">
             <div class="logo"><img src="./images/logo.png" alt="logo"></div>
             <nav>
                 <ul>
@@ -26,17 +31,19 @@
                 </ul>
             </nav>
             <!--creats search bar with magnifier button after text box -->
-            <form class="search">
-                <input type="search" id="gsearch" name="gsearch" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="search clearfix">
+                    <input type="search" id="gsearch" name="gsearch" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
         <!--Wellcom: parent div for Full width background in css + Child div for header, text, and button to summery page-->
         <div class="welcome">
-            <div>
-                <h1>Welcom to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error, aperiam porro quas minus qui aliquam a cumque id quos suscipit sunt aspernatur eos, molestiae neque magnam officiis nulla? Magni?</p>
-                <button type="button">Connect with us! <i class="fa-solid fa-caret-right"></i></button>
+            <div class="wrapper">
+                <div class="container">
+                    <h1>Welcom to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error, aperiam porro quas minus qui aliquam a cumque id quos suscipit sunt aspernatur eos, molestiae neque magnam officiis nulla? Magni?</p>
+                    <button type="button">Connect with us! <i class="fa-solid fa-caret-right"></i></button>
+                </div>
             </div>
         </div>
     </header>
@@ -46,7 +53,7 @@
         <!--section with full width yellow background in css - child div contains an image + header  2 paragraph-->
         <section id="aboutus">
             <!--class wrapper (reusable): a container to set margins and center the content-->
-            <div class="wrapper">
+            <div class="wrapper container">
                 <img src="./images/about-us.jpg" alt="recreation room">
                 <!--container class to wrap text and buttons and add extra padding and margin-->
                 <div class="container">
@@ -61,7 +68,7 @@
         <!-- section 3: no background. services are wrapped in wrapper container-->
         <section id="services">
             <!--wrapper: wraps the main heaser and all 5 services.-->
-            <div class="wrapper">
+            <div class="wrapper container">
                 <h2>Our Services</h2>
                 <!--service class contains an image with the same size as wrapper, and a container for sub header, text, and button -->
                 <!--service 1: digital transformation-->
@@ -126,7 +133,7 @@
     <!--Team section: no background -->
     <section id="team">
         <!-- wrapper: wraps main header of the team section and 2 member classes-->
-        <div class="wrapper">
+        <div class="wrapper container">
             <h2>Our Team</h2>
             <!--member: includes a photo of the member and a container for name, occupation, and text-->
             <div class="member">
@@ -154,7 +161,7 @@
     <!--content section: includes message form + time table + map location - all  wrapped -->
     <section id="contact">
         <!-- wrapper: wraps the message form, time table, and the map-->
-        <div class="wrapper">
+        <div class="wrapper container">
             <!--message form -->
             <form>
                 <h2>Contact Us</h2>
@@ -197,8 +204,10 @@
     <!--********************section 5: footer ******************-->
     <!--section footer: full width backgroun from css-->
     <footer>
-        <p>© Copyright three star media, 2020</p>
-        <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+        <div class="container">
+            <p>© Copyright three star media, 2020</p>
+            <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+        </div>
     </footer>
     <!--********************************************************-->
     </main>
