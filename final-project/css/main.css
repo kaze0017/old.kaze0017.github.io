@@ -35,7 +35,7 @@ p{
 }
 button{
     background-color: #222222;
-    color: #ffe6ac;
+    color: white;
     height:40px;
     border: 0;
     margin-bottom: 0%;
@@ -176,9 +176,21 @@ nav ul li:nth-child(1) a{
 }
 /*********************************************************/
 
-.service{
-    margin-bottom: 10px;
+#services > .container{
+    height: 360vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.service{
+    height: 70vh;
+}
+.service > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #services > .wrapper > .service {
     background-color: #ffe6ac;
 }
@@ -186,12 +198,12 @@ nav ul li:nth-child(1) a{
     width: 100%;
     size: cover;
 }
-#services > .vision{
+.vision{
     background-image: url(../images/vision.jpg);
     background-size: 100%;
     color: #fff;
 }
-#services > .vision > .wrapper > .container> button{
+.vision > .wrapper > .container> button{
     background-color: #13263F;
     color: #fff;
     border: 1px solid #c78c06;
