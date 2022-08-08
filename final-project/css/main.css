@@ -10,6 +10,7 @@
 html{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    min-width: 370px;
 }
 .wrapper{
     margin: 0px auto;
@@ -24,7 +25,7 @@ h1 {
 }
 button{
     background-color: #222222;
-    color: #fff;
+    color: #ffe6ac;
     height:40px;
     border: 0;
     margin-bottom: 0%;
@@ -38,76 +39,124 @@ button{
   }
 
 /******* section 1:Header - logo, navigation and search bar ******/
+/** Header with vertical flex-vertical to devide vh between welcom area and navigation area*/
 header {
-    background-color: #222222;
+    height: 100vh;
+    background-color: #222222; 
+    display: flex;
+    flex-direction: column;
+}
+header .navigation{
+    height: 46vh;
+    width: 100vw;
+}
+header .welcome{
+    flex-grow: 1;
+    width: 100vw;
+}
+
+
+.navigation{
+    display: flex;
+    flex-direction: column;
 }
 .logo{
-    background-color: #C78B07;
+    height: 30%;
+    background-color:#c78c06;
+    padding: 0.5vh 0;
 }
 nav{
-    text-align: center;
+    height: 62%;
+    background-color:#222222;
 }
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #C78B07;
-}
-nav ul li:nth-child(1) a{
-    background-color: #C78B07;
-    color: #222222;
-}
-header .search {
+.search {
+    flex-grow: 1;
     background-color: #222222;
     text-align: center;
-    font-size: 0px;
 }
+.logo img{
+    height: 90%;
+}
+nav ul{
+    height: 100%;
+}
+nav ul li{
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+ nav ul li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #c78c06;
+    font-size: 0.5rem;
+}
+nav ul li:nth-child(1) a{
+    background-color: #c78c06;
+    color: #222222;
+}
+
 /* search bar same size as magnifier button */
 .search {
     display: flex;
+    font-size: 0px;
 }
 
 .search  button {
-    font-size: 15px;
-    line-height: 17px;
-    height: 19px;
-    padding: 0px 1px;
-    border: 1px solid #C78B07;
-    color: #C78B07;
+    font-size: 0.7rem;
+    line-height: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    padding: 0px 0px;
+    border: 1px solid #c78c06;
+    color: #c78c06;
     background-color: #222222;
 }
 .search  input {
-    border: 0;
-    font-size: 15px;
-    line-height: 17px;
-    height: 19px;
+    font-size: 0.7rem;
+    line-height: 100%;
+    height: 100%;
     border: 1px solid transparent;
     flex-grow:1;
 }
 
 
 /* welcome page*/
-header .welcome {
-    height: 100vh;
+.welcome {
+    min-width: 370px;
     background-image: url(../images/main-banner.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .welcome > div{
+.welcome > div{
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 75%;
     padding: 2%;
 }
+.welcome .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .welcome h1{
-    padding: 10% 0% 5% 0px;
+    font-size: 2.25rem;
+    margin-top: 3vh
 }
 .welcome p{
-    font-size: 10px;
+    font-size: 0.5rem;
 }
 .welcome button{
-    background-color: #C78B07;
+    height: 20%;
+    width: 40% ;
+    font-size: 0.8rem;
+    background-color: #c78c06;
     color: #222222;
 }
 /*********************************************************/
@@ -123,7 +172,7 @@ header .welcome > div{
     margin-bottom: 10px;
 }
 #services > .wrapper > .service {
-    background-color: #FFE6AC;
+    background-color: #ffe6ac;
 }
 #services > .wrapper > .service > img {
     width: 100%;
@@ -137,7 +186,7 @@ header .welcome > div{
 #services > .vision > .wrapper > .container> button{
     background-color: #13263F;
     color: #fff;
-    border: 1px solid #C78B07;
+    border: 1px solid #c78c06;
 }
 /*********************************************************/
 
@@ -145,14 +194,14 @@ header .welcome > div{
     margin-bottom: 10px;
 }
 #team > .wrapper > .member {
-    background-color: #FFE6AC;
+    background-color: #ffe6ac;
 }
 #team > .wrapper > .member> img {
     width: 100%;
     size: cover;
 }
 #team > .wrapper > .member > .container >h3{
-    border-bottom: 1.5px solid #C78B07;
+    border-bottom: 1.5px solid #c78c06;
 }
 /*********************************************************/
 
@@ -170,9 +219,8 @@ iframe{
 
 footer{
     background-color: #222222;
-    color: #C78B07;
+    color: #c78c06;
 }
 footer a{
-    color: #C78B07;
+    color: #c78c06;
 }
-/*********************************************************/
