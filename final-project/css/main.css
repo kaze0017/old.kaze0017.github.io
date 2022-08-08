@@ -9,7 +9,7 @@
 /* makes Open Sans from google fonts the default */
 html{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 .wrapper{
     margin: 0px auto;
@@ -51,7 +51,7 @@ button{
 /** Header with vertical flex-vertical to devide vh between welcom area and navigation area*/
 header {
     height: 100vh;
-    min-height: 450px;
+    min-height: 550px;
     min-width: 250px;
     background-color: #222222; 
     display: flex;
@@ -165,3 +165,81 @@ nav ul li:nth-child(1) a{
     color: #222222;
 }
 /*********************************************************/
+#aboutus{
+    min-height: 60vh;
+    background-color: #FFE6AC;
+}
+#aboutus img{
+    width: 100%
+}
+/*********************************************************/
+
+#services > .container{
+    min-height: 360vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service{
+    min-height: 70vh;
+    margin-bottom: 2vh;
+}
+.service > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services > .wrapper > .service {
+    background-color: #ffe6ac;
+}
+#services > .wrapper > .service > img {
+    width: 100%;
+    size: cover;
+}
+.vision{
+    background-image: url(../images/vision.jpg);
+    background-size: 100%;
+    color: #fff;
+}
+.vision > .wrapper > .container> button{
+    background-color: #13263F;
+    color: #fff;
+    border: 1px solid #c78c06;
+}
+/*********************************************************/
+
+.member{
+    margin-bottom: 10px;
+}
+#team > .wrapper > .member {
+    background-color: #ffe6ac;
+}
+#team > .wrapper > .member> img {
+    width: 100%;
+    size: cover;
+}
+#team > .wrapper > .member > .container >h3{
+    border-bottom: 1.5px solid #c78c06;
+}
+/*********************************************************/
+
+#contact form label,#contact form input,#contact form textarea {
+    display: block;
+    width: 100%;
+}
+#contact form input:nth-child(9){
+    width: 20%;
+}
+iframe{
+    width: 100%;
+}
+/*********************************************************/
+
+footer{
+    background-color: #222222;
+    color: #c78c06;
+}
+footer a{
+    color: #c78c06;
+}
