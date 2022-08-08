@@ -9,7 +9,7 @@
 /* makes Open Sans from google fonts the default */
 html{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 .wrapper{
     margin: 0px auto;
