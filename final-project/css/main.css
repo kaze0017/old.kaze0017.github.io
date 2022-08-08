@@ -175,13 +175,11 @@ nav ul li:nth-child(1) a{
 /*********************************************************/
 
 #services > .container{
-    min-height: 160rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .service{
-    min-height: 32rem;
     margin-bottom: 2vh;
 }
 .service > .container{
