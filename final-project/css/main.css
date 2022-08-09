@@ -22,7 +22,6 @@ html{
     justify-content: space-between;
 }
 h1 {
-    
     font-size: 4.5rem;
     font-weight: 700;    
 }
@@ -286,19 +285,19 @@ footer a{
  /********************************************************/
  /******************Media query***************************/
  @media screen and (min-width: 760px){
-    .navigation{
+.navigation{
         flex-direction: row;
         align-items: center;
         justify-content: center;}
-    .navigation ul{flex-direction: row;}
-    .logo{flex-grow: 1; background-color:#222222;}
-    nav{flex-grow: 5;}
-    .search{flex-grow: 2;}
+.navigation ul{flex-direction: row;}
+.logo{flex-grow: 1; background-color:#222222;}
+nav{flex-grow: 5;}
+.search{flex-grow: 2;}
 
-    #aboutus > .container{
+#aboutus > .container{
         flex-direction: row;
     }
-    #aboutus > .container > div{
+#aboutus > .container > div{
         width: 49%;
     }
 #services > .container{
