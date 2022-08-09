@@ -21,8 +21,7 @@ html{
 h1 {
     
     font-size: 4.5rem;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 h2{
     margin-top: 3rem;
@@ -192,8 +191,12 @@ nav ul li:nth-child(1) a{
 }
 /*********************************************************/
 #aboutus{
-    min-height: 30rem;
     background-color: #FFE6AC;
+}
+#aboutus > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #aboutus img{
     width: 100%
@@ -238,6 +241,8 @@ nav ul li:nth-child(1) a{
 }
 #team > .wrapper > .member {
     background-color: #ffe6ac;
+    display: flex;
+    flex-direction: column;
 }
 #team > .wrapper > .member> img {
     width: 100%;
@@ -300,4 +305,59 @@ footer{
 }
 footer a{
     color: #c78c06;
+}
+ /********************************************************/
+ /******************Media query***************************/
+ @media screen and (min-width: 760px){
+
+    #aboutus > .container{
+        flex-direction: row;
+    }
+    #aboutus > .container > div{
+        width: 49%;
+    }
+#services > .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "s1 s1 s1 s2 s2 s2"
+    "s3 s3 s4 s4 s5 s5";
+    column-gap: 2vw;
+}
+#services >.container >.service:nth-child(1){grid-area: s1;}
+#services >.container >.service:nth-child(2){grid-area: s2;}
+#services >.container >.service:nth-child(3){grid-area: s3;}
+#services >.container >.service:nth-child(4){grid-area: s4;}
+#services >.container >.service:nth-child(5){grid-area: s5;}
+.service button{width:100%}
+.service .container{
+    border: 1px solid black;
+}
+#services div{
+    border: 1px solid black;
+}
+#team > .wrapper > .member:nth-child(2) {
+    flex-direction: row;
+    margin: 0;
+ }
+ #team > .wrapper > .member:nth-child(3) {
+    flex-direction: row-reverse;
+ }
+ #team > .wrapper > .member> img {
+    width: 50%
+ }
+ #contact >.wrapper > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "m1 l1"
+    "ho ho";
+    column-gap: 2vw;
+ }
+
+ #contact .wrapper .container .message{grid-area: m1;}
+ #contact .wrapper .container .location{grid-area: l1;}
+ #contact .wrapper .container .hours{grid-area: ho;}
 }
