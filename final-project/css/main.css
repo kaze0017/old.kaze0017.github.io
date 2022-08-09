@@ -104,6 +104,7 @@ header .welcome{
 }
 nav{
     background-color:#222222;
+
 }
 .search {
     flex-grow: 1;
@@ -114,6 +115,7 @@ nav{
     height: 4rem;
 
 }
+nav >.container,form {padding: 0;}
 nav ul li{
     display: inline-block;
     width: 100%;
@@ -135,7 +137,7 @@ nav ul li:nth-child(1) a{
 
 /* search bar same size as magnifier button */
 .search {
-    display: flex;
+    flex-direction: row;
     font-size: 0px;
 }
 .search  button{
@@ -284,6 +286,14 @@ footer a{
  /********************************************************/
  /******************Media query***************************/
  @media screen and (min-width: 760px){
+    .navigation{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;}
+    .navigation ul{flex-direction: row;}
+    .logo{flex-grow: 1; background-color:#222222;}
+    nav{flex-grow: 5;}
+    .search{flex-grow: 2;}
 
     #aboutus > .container{
         flex-direction: row;
