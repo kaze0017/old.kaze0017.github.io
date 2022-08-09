@@ -21,6 +21,7 @@ html{
 h1 {
     font-size:2rem ;
     font-weight: bold;
+    
 }
 h2{
     margin-top: 2vh;
@@ -39,7 +40,9 @@ p{
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     font-size:1rem;
+    text-indent: 10px;
 }
+
 button{
     background-color: #222222;
     color: white;
@@ -268,6 +271,7 @@ table tr{
     line-height: 3rem;
 }
 tbody tr{
+    text-indent: 10px;
     text-align: left;
 }
 iframe{
