@@ -19,38 +19,56 @@ html{
     padding: 2vw;
 }
 h1 {
-    font-size:2rem ;
-    font-weight: bold;
+    
+    font-size: 4.5rem;
+    font-weight: 700;
     
 }
 h2{
-    margin-top: 2vh;
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 h3{
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
 }
 h4{
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 2.1rem;
 }
 p{
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     font-size:1rem;
-    text-indent: 10px;
+    line-height: 1.5rem;
+    /* text-indent: 10px; */
+    font-weight: 400;
+}
+a{
+    font-weight: 600;
 }
 
 button{
     background-color: #222222;
     color: white;
-    height:40px;
     border: 0;
-    margin-bottom: 0%;
-    padding: 0% 5%;
-    font-size: 15px;
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+i{
+    font-size: 2rem;
+}
+label{
+    line-height:2 ;
+}
+input{
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 .clearfix::after {
     content: "";
@@ -115,7 +133,7 @@ nav ul li{
     align-items: center;
     text-decoration: none;
     color: #c78c06;
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 nav ul li:nth-child(1) a{
     background-color: #c78c06;
@@ -129,7 +147,6 @@ nav ul li:nth-child(1) a{
 }
 
 .search  button {
-    font-size: 0.7rem;
     line-height: 100%;
     height: 100%;
     aspect-ratio: 1/1;
@@ -167,11 +184,9 @@ nav ul li:nth-child(1) a{
     justify-content: space-between;
 }
 .welcome h1{
-    font-size: 2.25rem;
     margin-top: 3vh
 }
 .welcome button{
-    font-size: 0.8rem;
     background-color: #c78c06;
     color: #222222;
 }
@@ -228,7 +243,7 @@ nav ul li:nth-child(1) a{
     width: 100%;
     size: cover;
 }
-#team > .wrapper > .member > .container >h3{
+#team > .wrapper > .member > .container >h4{
     border-bottom: 1.7px solid #c78c06;
 }
 /*********************************************************/
@@ -243,13 +258,13 @@ nav ul li:nth-child(1) a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20rem;
 }
 #contact button{
+    border: 0;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
     color: #c78c06;
-    padding: 2px;
-    height: 1.2rem;
-    padding: 0 4px;
 }
 
 thead{
