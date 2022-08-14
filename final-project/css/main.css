@@ -97,6 +97,7 @@ header .welcome{
 .navigation{
     display: flex;
     flex-direction: column;
+    row-gap: 0px;
 }
 .logo{
     background-color:#c78c06;
@@ -282,6 +283,7 @@ iframe{
 footer{
     background-color: #222222;
     color: #c78c06;
+    padding: 20px;
 }
 footer a{
     color: #c78c06;
