@@ -304,4 +304,5 @@ footer a{color: #c78c06;}
     #contact .message{grid-area: m1;}
     #contact .location{grid-area: l1;}
     #contact .hours{grid-area: ho;}
+    iframe{aspect-ratio: auto;}
 }
