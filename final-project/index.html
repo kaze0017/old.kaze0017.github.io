@@ -17,7 +17,7 @@
     <title>Kazemi-MTM6130: Final Project</title>
 </head>
 <body>
-    <!--section 1 - Header: contains logo(div), page navigation(nav-ul), search bar(form) and wellcom-->
+    <!--section 1 - Header: contains navigation menu(logo(div), page navigation(nav-ul), search bar(form)) and wellcom page-->
     <header id="home">
         <!--container: wraps the logo, nav, and search bar -full width black backgrond from css-->
         <div class="navigation wrapper container">
@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             <!--creats search bar with magnifier button after text box -->
-            <form class="search clearfix container ">
+            <form class="search container ">
                     <input type="search" id="gsearch" name="gsearch" placeholder="Search">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -64,12 +64,13 @@
         </section>
     <!--********************************************************-->
     <!--********************section 3: services*****************-->
-        <!-- section 3: no background. services are wrapped in wrapper container-->
+        <!-- section 3: no background. services are wrapped in wrapper for margin and container for padding-->
         <section id="services" class="wrapper container">
             <!--wrapper: wraps the main heaser and all 5 services.-->
             <div><h2>Our Services</h2></div>
+            <!--the container wrapes and styles insde services-->
             <div class="container">
-                <!--service class contains an image with the same size as wrapper, and a container for sub header, text, and button -->
+                <!--each service is a container and wraps its image and another container for text(header,paragrapg,and button)-->
                 <!--service 1: digital transformation-->
                 <div class="service container">
                     <img src="./images/digital.jpg" alt="digital services">
@@ -116,111 +117,109 @@
                     </div>
                 </div>
             </div>
-            <!-- our vision: parent div with full width background image from css - child div wrapes header + a paragraph con button-->
-    </section>
-    <div class="vision">
-        <div class="wrapper">
-            <div class="container">
-                <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
-                <div><button type="button">Learn More <i class="fa-solid fa-caret-right"></i></button></div>
+        </section>
+    <!-- our vision: parent div with full width background image from css - a wrapper for margin and a child container that wrapes header + a paragraph con button-->
+        <div class="vision">
+            <div class="wrapper">
+                <div class="container">
+                    <h3>Our Vision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugit neque temporibus culpa! Distinctio deserunt nemo saepe consectetur debitis iste at velit, quas blanditiis dicta ipsa ipsam, dignissimos ut. Repudiandae.</p>
+                    <div><button type="button">Learn More <i class="fa-solid fa-caret-right"></i></button></div>
+                </div>
             </div>
         </div>
-    </div>
     <!--********************************************************-->
     <!--********************section 4: Team ********************-->
     <!--Team section: no background -->
-    <section id="team">
-        <!-- wrapper: wraps main header of the team section and 2 member classes-->
-        <div class="members wrapper container">
-            <h2>Our Team</h2>
-            <!--member: includes a photo of the member and a container for name, occupation, and text-->
-            <div class="member container">
-                <div><img src="./images/john.jpg" alt="john doe"></div>
-                <div class="container">
-                    <h3>John Doe</h3>
-                    <!--here, css add a line-->
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
+        <section id="team">
+            <!-- wrapper: wraps main header of the team section and 2 member classes-->
+            <div class="members wrapper container">
+                <h2>Our Team</h2>
+                <!--member: includes a photo of the member and a container for name, occupation, and text-->
+                <div class="member container">
+                    <div><img src="./images/john.jpg" alt="john doe"></div>
+                    <div class="container">
+                        <h3>John Doe</h3>
+                        <!--here, css add a line-->
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
+                    </div>
+                </div>
+                <div class="member container">
+                    <div><img src="./images/bob.jpg" alt="bob rite"></div>
+                    <div class="container">
+                        <h3>Bob Rite</h3>
+                        <!--here, css add a line-->
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
+                    </div>
                 </div>
             </div>
-            <div class="member container">
-                <div><img src="./images/bob.jpg" alt="bob rite"></div>
-                <div class="container">
-                    <h3>Bob Rite</h3>
-                    <!--here, css add a line-->
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nemo ducimus aperiam vel quidem beatae illo numquam optio. Obcaecati harum velit perspiciatis ab error omnis ratione earum saepe necessitatibus cumque?</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     <!--********************************************************-->
     <!--********************section 5: contact******************-->
     <!--content section: includes message form + time table + map location - all  wrapped -->
-    <section id="contact">
-        <!-- wrapper: wraps the message form, time table, and the map-->
-        <div class="wrapper">
-            <!--message form -->
-            <div class="container"><h2>Contact Us</h2></div>
-            <div class="container">
-                <div class="message container">
-                    <form>
-                        <h3>Send us a message</h3>
-                        <div>
-                            <div><label for="fullname">Full Name</label></div>
-                            <div><input type="text" id="fullname" name="fullname"></div>
-                            <div><label for="email">Email</label></div>
-                            <div><input type="email" id="email"></div>
-                            <div><label for="message">Message</label></div>
-                            <div><textarea name="message" id="message" cols="30" rows="8"></textarea></div>
-                            <div><button type="submit">Send</button></div>
-                        </div>      
-                    </form>
-                </div>
-                <!--time table-->
-                <div class="hours container">
-                    <table>
-                        <caption><h3>Hours of operation</h3></caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Days</th>
-                                <th scope="col">Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Monday-Friday</th>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Saturday-Sunday</th>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!--map lication from google map-->
-                <div class="location container">
-                    <h3>Location</h3>
-                    <!--google maps link-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360082.5453852811!2d-76.23158777232409!3d45.16391586906526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sfr!4v1659042757255!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="contact">
+            <!-- wrapper: wraps the message form, time table, and the map-->
+            <div class="wrapper">
+                <!--message form -->
+                <div class="container"><h2>Contact Us</h2></div>
+                <div class="container">
+                    <div class="message container">
+                        <form>
+                            <h3>Send us a message</h3>
+                            <div>
+                                <div><label for="fullname">Full Name</label></div>
+                                <div><input type="text" id="fullname" name="fullname"></div>
+                                <div><label for="email">Email</label></div>
+                                <div><input type="email" id="email"></div>
+                                <div><label for="message">Message</label></div>
+                                <div><textarea name="message" id="message" cols="30" rows="8"></textarea></div>
+                                <div><button type="submit">Send</button></div>
+                            </div>      
+                        </form>
+                    </div>
+                    <!--time table-->
+                    <div class="hours container">
+                        <table>
+                            <caption><h3>Hours of operation</h3></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Days</th>
+                                    <th scope="col">Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Monday-Friday</th>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Saturday-Sunday</th>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--map location from google map-->
+                    <div class="location container">
+                        <h3>Location</h3>
+                        <!--google maps link-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360082.5453852811!2d-76.23158777232409!3d45.16391586906526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sfr!4v1659042757255!5m2!1sen!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </section>
+        </section>
     <!--********************************************************-->
     <!--********************section 5: footer ******************-->
     <!--section footer: full width backgroun from css-->
-    <footer>
-        <div class="wrapper">
-            <p>© Copyright three star media, 2020</p>
-            <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-        </div>
-    </footer>
+        <footer>
+            <div class="wrapper">
+                <p>© Copyright three star media, 2020</p>
+                <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+            </div>
+        </footer>
     <!--********************************************************-->
     </main>
-    
 </body>
 </html>
