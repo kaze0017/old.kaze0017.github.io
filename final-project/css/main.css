@@ -1,3 +1,4 @@
+/******************default settings***********************/
 *,
 *:after,
 *:before{
@@ -5,16 +6,55 @@
     margin: 0;
     padding: 0;
 }
+/*colors: #c78c06, #ffe6ac, #222, and white */
+/* font family: 'Open Sans' Google font for the webpage*/
 
-/* makes Open Sans from google fonts the default (elements don't inherit font settings */
+/* makes Open Sans from google fonts the default (elements don't inherit html default font)*/
 html, input, textarea, button{
+    color: #222222;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 14px;}
+h1 {
+    font-size: 4.5rem;
+    line-height: 7rem;
+    font-weight: 700;}
+h2{
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;}
+h3{ margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;}
+h4{
+    font-size: 1.1rem;
+    font-weight: 700;}
+p{
+    margin-top: 0.8rem;
+    font-size:1rem;
+    line-height: 1.5rem;
+    font-weight: 400;}
+a{font-weight: 600;}
+i{font-size: 2rem;}
+label{
+    color:#222222;
+    line-height:2;}
+input{
+    color: #222222;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
+img{width: 100%}
+
+/*****************************************************/
+/*************** reusable classes*********************/
+
+/*wrapper: frames it contents in 1200px window and adds margin*/
 .wrapper{
     margin: 0px auto;
     max-width: 1200px;
 }
+/*container: adjusts its contents on "y" axis with propper padding and space in between by default - changes to "x" axis when mneeded */
 .container{
     padding: 10px;
     gap: 10px;
@@ -22,38 +62,6 @@ html, input, textarea, button{
     flex-direction: column;
     justify-content: space-between;
 }
-h1 {
-    font-size: 4.5rem;
-    line-height: 7rem;
-    font-weight: 700;    
-}
-h2{
-    margin-top: 3rem;
-    font-size: 3rem;
-    font-weight: 700;
-}
-h3{
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-}
-h4{
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-p{
-    margin-top: 0.8rem;
-    font-size:1rem;
-    line-height: 1.5rem;
-
-    /* text-indent: 10px; */
-    font-weight: 400;
-}
-a{
-    font-weight: 600;
-}
-
 button{
     font-size: 1.5rem;;
     font-weight: 600;
@@ -62,93 +70,67 @@ button{
     border: 0;
     padding: 2rem;
 }
-i{
-    font-size: 2rem;
-}
-label{
-    line-height:2 ;
-}
-input{
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
+/**************************************************/
 
 /******* section 1:Header - logo, navigation and search bar ******/
-/** Header with vertical flex-vertical to devide vh between welcom area and navigation area*/
-header {
-    background-color: #222222; 
-    display: flex;
-    flex-direction: column;
-}
-header .navigation{
-    width: 100%;
-}
-header .welcome{
-    flex-grow: 1;
-    width: 100%;
-}
 
-
-.navigation{
-    display: flex;
-    flex-direction: column;
-    row-gap: 0px;
-}
+/*Header: vertical container includes logo, nav, and search*/
+header {background-color: #222222;}
+.navigation{gap: 0px;}
+/*removes the default padding by container class*/ 
+nav >.container,form {padding: 0;}
 .logo{
     background-color:#c78c06;
     padding: 0.5vh 0;
 }
-nav{
-    background-color:#222222;
-
-}
-.search {
-    flex-grow: 1;
-    background-color: #222222;
-    text-align: center;
-    column-gap: 0;
-}
 .logo img{
-    height: 4rem;
-
+    height: 4rem; 
+    width: auto;}
+/*first item in nav has different color*/
+nav li:nth-child(1) a{
+    background-color: #c78c06;
+    color: #222222;
 }
-nav >.container,form {padding: 0;}
-nav ul li{
+nav li{
     display: inline-block;
     width: 100%;
     text-align: center;
 }
- nav ul li a {
-    line-height: 2rem;
+/*adjusts all links in the center of its parrent*/
+nav a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #c78c06;
     font-size: 1rem;
+    line-height: 2rem;
 }
-nav ul li:nth-child(1) a{
-    background-color: #c78c06;
-    color: #222222;
-}
-
-/* search bar same size as magnifier button */
+/*changes container default flex-direction to row and removes extra spaces*/
 .search {
     flex-direction: row;
-    font-size: 0px;
+    background-color: #222222;
+    gap: 0;
 }
+/*flex-grow: input fills all remaining space of search container*/
+.search  input {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    height: 2rem;
+    border: 1px solid transparent;
+    flex-grow:1;
+}
+/* search bar same size as magnifier button */
 .search  button{
     border: 0;
     padding: 0;
-    font-size: 0;
 }
 .search  button i{
-    padding: 0;
     font-size: 1.5rem;
     line-height: 2rem;
     height: 2rem;
@@ -158,14 +140,10 @@ nav ul li:nth-child(1) a{
     background-color: #222222;
 }
 
-.search  input {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    height: 2rem;
-    border: 1px solid transparent;
-    flex-grow:1;
+header .welcome{
+    flex-grow: 1;
+    width: 100%;
 }
-
 
 /* welcome page*/
 .welcome {
@@ -178,7 +156,7 @@ nav ul li:nth-child(1) a{
     justify-content: center;
     align-items: center;
 }
-.welcome > div{
+.welcome > .grayback{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     padding-top: 3rem;
@@ -188,29 +166,20 @@ nav ul li:nth-child(1) a{
     color: #222222;
 }
 /*********************************************************/
-#aboutus{
-    background-color: #FFE6AC;
-}
-#aboutus img{
-    width: 100%
-}
-/*********************************************************/
-.service{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.service > .container{
-    flex-grow: 1;
-}
 
-#services .service {
+/*********************section 2: about us*****************/
+#aboutus{background-color: #ffe6ac;}
+/*********************************************************/
+
+/**************section 3: services & vission**************/
+/*padding: removes default padding by container class*/
+.service{
+    padding: 0;
+    gap: 0px;
     background-color: #ffe6ac;
 }
-#services > .wrapper > .service > img {
-    width: 100%;
-}
+/*makes the container of texts the same height*/
+.service .container{flex-grow:1;}
 .vision{
     background-image: url(../images/vision.jpg);
     background-size: cover;
@@ -219,137 +188,119 @@ nav ul li:nth-child(1) a{
     color: #fff;
 }
 .vision button{
-    background-color: #13263F;
     color: #fff;
     border: 1px solid #c78c06;
 }
-/*********************************************************/
-
-.member{
-    margin-bottom: 10px;
-}
-#team > .wrapper > .member {
+/********************************************************/
+/********************section 4: Team ********************/
+.member {
     background-color: #ffe6ac;
-    display: flex;
-    flex-direction: column;
+    padding: 0%;
+    gap: 0;
 }
-#team > .wrapper > .member> img {
-    width: 100%;
-}
-#team > .wrapper > .member > .container >h4{
+/*drows aline under occupation*/
+.member h4{
     border-bottom: 3px solid #c78c06;
 }
-/*********************************************************/
-
-#contact input, #contact textarea{
-    width: 100%;
-}
-label{color: black;}
-
+/**********************************************************/
+/**************section 5: contact & map********************/
+#contact input, #contact textarea,table,iframe{width: 100%;}
 #contact button{
     padding: 0% 5px;
     border: 0;
     color: #c78c06;
 }
-
-thead{
-    background-color:#FFE6AC ;
-}
-table{
-    width: 100%;
-}
+thead{background-color:#FFE6AC;}
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
-table caption{
-    text-align: left;
 }
-table tr{
-    line-height: 3rem;
-}
+table caption{text-align: left;}
+table tr{line-height: 3rem;}
 tbody tr{
     text-indent: 10px;
     text-align: left;
 }
-iframe{
-    width: 100%;
-    flex-grow: 1;
-}
+/*forces the map to fill the location container*/
+iframe{flex-grow: 1;}
 /*********************************************************/
 
+/********************section 5: footer *******************/
 footer{
     background-color: #222222;
     color: #c78c06;
     padding: 20px;
 }
-footer a{
-    color: #c78c06;
-}
+footer a{color: #c78c06;}
  /********************************************************/
+
  /******************Media query***************************/
  @media screen and (min-width: 760px){
-.navigation{
+    /***********section: header***********/
+    /* changes the default flex-direction of navigation container from column to row*/
+    .navigation{
         flex-direction: row;
         align-items: center;
-        justify-content: center;}
-.navigation ul{flex-direction: row;}
-.logo{flex-grow: 1; background-color:#222222;}
-nav{flex-grow: 5;}
-.search{flex-grow: 2;}
+        justify-content: center;
+    }
+    /* allocates the space of navigation bar to logo/nav/search -> 1/5/2 */
+    .logo{flex-grow: 1; background-color:#222222;}
+    nav{flex-grow: 5;}
+    .search{flex-grow: 2;}
+    /*changes the default flex-direction of nav container to row */
+    .navigation ul{flex-direction: row;}
+    #aboutus > .container{flex-direction: row;}
+    /*divides the about us section equally for img and text*/
+    #aboutus > .container > div{width: 50%;}
+    #aboutus img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    /***********Services********/
+    /*changes the services section from a column style(flex) to two rows style(grid)*/
+    #services > .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "s1 s1 s1 s2 s2 s2"
+        "s3 s3 s4 s4 s5 s5";
+        column-gap: 2vw;
+    }
+    .service:nth-child(1){grid-area: s1;}
+    .service:nth-child(2){grid-area: s2;}
+    .service:nth-child(3){grid-area: s3;}
+    .service:nth-child(4){grid-area: s4;}
+    .service:nth-child(5){grid-area: s5;}
+    .service button{width:100%}
 
-#aboutus > .container{
+    /********team********/
+    /*removes unwanted gap between divs*/
+    #team .members{font-size: 0%; gap: 0;}
+    /*changes the style of each member(img + text) from column(flex) to row(flex)*/
+    #team .member:nth-child(2) {
         flex-direction: row;
+        margin: 0;
     }
-#aboutus > .container > div{
-        width: 50%;
+    #team .member:nth-child(3) {
+        flex-direction: row-reverse;
     }
-#aboutus img{  
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-#services > .container{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    "s1 s1 s1 s2 s2 s2"
-    "s3 s3 s4 s4 s5 s5";
-    column-gap: 2vw;
-}
-#services >.container >.service:nth-child(1){grid-area: s1;}
-#services >.container >.service:nth-child(2){grid-area: s2;}
-#services >.container >.service:nth-child(3){grid-area: s3;}
-#services >.container >.service:nth-child(4){grid-area: s4;}
-#services >.container >.service:nth-child(5){grid-area: s5;}
-.service button{width:100%}
-#team > .wrapper > .member:nth-child(2) {
-    flex-direction: row;
-    margin: 0;
- }
- #team > .wrapper > .member:nth-child(3) {
-    flex-direction: row-reverse;
- }
- #team > .wrapper > .member> img {
-    width: 50%
- }
+    /*divides each member equally between two divs (photo and text*/
+    .member > div {width: 50%}
+    .member > .container{justify-content:flex-start;}
 
-.member > .container{
-    justify-content:flex-start;
- }
- #team > .container{
-    row-gap: 0px;
-}
- #contact >.wrapper > .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "m1 l1"
-    "ho ho";
-    column-gap: 2vw;
- }
+    /*****contacts*****/
+    /*changes the contact section from a column style(flex) to two rows style(grid)*/
+    #contact >.wrapper > .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "m1 l1"
+        "ho ho";
+        column-gap: 2vw;
+    }
 
- #contact .wrapper .container .message{grid-area: m1;}
- #contact .wrapper .container .location{grid-area: l1;}
- #contact .wrapper .container .hours{grid-area: ho;}
+    #contact .message{grid-area: m1;}
+    #contact .location{grid-area: l1;}
+    #contact .hours{grid-area: ho;}
 }
